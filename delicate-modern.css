@@ -258,7 +258,9 @@ p {
 }
 
 .footer-brand h3 {
-    background: linear-gradient(135deg, #e8e0f5 0%, #ffffff 100%);
+    color: var(--lavender-light) !important;
+    background: none !important;
+    -webkit-text-fill-color: var(--lavender-light) !important;
 }
 
 .footer-brand p,
