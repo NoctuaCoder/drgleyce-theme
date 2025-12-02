@@ -280,8 +280,8 @@ p {
 .timeline-item {
     position: relative;
     margin-bottom: 24px;
-    padding-left: 50px;
-    /* Increased from 40px to give more space */
+    padding-left: 60px;
+    /* Increased significantly to 60px */
     display: flex;
     align-items: center;
 }
@@ -289,9 +289,9 @@ p {
 .timeline-icon {
     position: absolute;
     left: 0;
-    width: 36px;
-    /* Slightly smaller icon container */
-    height: 36px;
+    width: 40px;
+    /* Restored size */
+    height: 40px;
     background: white;
     border: 2px solid var(--lavender-light);
     border-radius: 50%;
@@ -299,7 +299,7 @@ p {
     align-items: center;
     justify-content: center;
     color: var(--purple-primary);
-    font-size: 0.9rem;
+    font-size: 1rem;
     z-index: 2;
     box-shadow: 0 4px 10px rgba(117, 97, 158, 0.1);
     transition: all 0.3s ease;
