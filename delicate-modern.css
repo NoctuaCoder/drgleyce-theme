@@ -250,19 +250,64 @@ p {
     border-radius: 20px;
 }
 
-/* Soft Credentials - More Visible */
+/* Enhanced About Typography */
+.about-text p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: rgba(63, 42, 83, 0.8);
+    margin-bottom: 20px;
+}
+
+/* Modern Credentials Grid */
+.credentials {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 16px;
+    margin-top: 32px;
+}
+
+/* Soft Credentials - Modern Card Style */
 .credential-item {
-    background: rgba(248, 245, 252, 0.8);
-    border-left: 3px solid var(--purple-primary);
-    padding: 12px 18px;
+    background: white;
+    border: 1px solid rgba(190, 174, 219, 0.3);
+    border-radius: 16px;
+    padding: 16px 20px;
     font-size: 0.95rem;
-    color: rgba(0, 0, 0, 0.85) !important;
+    color: rgba(63, 42, 83, 0.9) !important;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 4px 15px rgba(117, 97, 158, 0.05) !important;
+    transition: all 0.3s ease;
+}
+
+.credential-item:hover {
+    transform: translateY(-3px);
+    border-color: var(--lavender-light);
+    box-shadow: 0 8px 25px rgba(117, 97, 158, 0.12) !important;
 }
 
 .credential-item::before {
+    content: '\f058';
+    /* FontAwesome Check Circle */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
     color: var(--purple-primary) !important;
-    font-size: 1.1rem;
-    font-weight: bold;
+    font-size: 1.2rem;
+    background: rgba(232, 224, 245, 0.5);
+    min-width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+/* Highlight CREFITO */
+.credential-item:last-child {
+    background: linear-gradient(135deg, #f5f0fa 0%, #ffffff 100%);
+    border-color: var(--purple-primary);
+    font-weight: 600;
 }
 
 /* Delicate Footer */
