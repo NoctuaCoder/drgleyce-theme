@@ -134,7 +134,17 @@ p {
 /* Delicate Logo */
 .logo span {
     background: linear-gradient(135deg, #9b8ab8 0%, #75619e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-weight: 700;
+}
+
+/* Fallback for better visibility */
+@supports not (background-clip: text) {
+    .logo span {
+        color: var(--purple-primary);
+    }
 }
 
 /* Softer Nav Links */
