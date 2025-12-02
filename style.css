@@ -338,10 +338,16 @@ a:hover {
     font-family: var(--font-display);
     font-size: var(--font-size-2xl);
     font-weight: 800;
-    color: var(--purple-primary);
     display: flex;
     align-items: center;
     gap: var(--space-sm);
+}
+
+.logo span {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .logo i {
@@ -848,12 +854,15 @@ a:hover {
 }
 
 .footer-brand h3 {
-    color: var(--lavender-light);
     margin-bottom: var(--space-md);
     display: flex;
     align-items: center;
     gap: var(--space-sm);
     font-size: var(--font-size-2xl);
+    background: linear-gradient(135deg, var(--lavender-light) 0%, #ffffff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
 }
 
 .footer-brand h3 i {
