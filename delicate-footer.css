@@ -199,10 +199,11 @@
     transform: translateX(4px);
 }
 
-/* Logo icon in footer - delicate sizing */
+/* Logo icon in footer - larger and more prominent */
 .footer-brand h3 .logo-icon-img {
-    width: 32px !important;
-    height: 32px !important;
-    opacity: 0.9;
-    filter: drop-shadow(0 2px 4px rgba(117, 97, 158, 0.15));
+    width: 42px !important;
+    height: 42px !important;
+    opacity: 0.95;
+    filter: drop-shadow(0 2px 6px rgba(117, 97, 158, 0.2));
+    margin-right: 8px;
 }

@@ -1,0 +1,20 @@
+/* ============================================
+   LOGO ICON SIZE ADJUSTMENTS
+   Larger, more prominent logo icons
+   ============================================ */
+
+/* Header logo icon - larger and more visible */
+.logo-icon-img {
+    width: 44px !important;
+    height: 44px !important;
+    object-fit: contain;
+    margin-right: 8px;
+    filter: drop-shadow(0 2px 6px rgba(117, 97, 158, 0.15));
+    transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-icon-img {
+    transform: scale(1.08);
+}
+
+/* Footer logo icon - already adjusted in delicate-footer.css */
