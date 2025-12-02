@@ -1,0 +1,307 @@
+/* ============================================
+   FEMININE & ELEGANT ENHANCEMENTS
+   ============================================ */
+
+/* Softer, More Rounded Elements */
+.card {
+    border-radius: 24px;
+    border: 1px solid rgba(190, 174, 219, 0.2);
+}
+
+.btn {
+    border-radius: 50px;
+    padding: 14px 32px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #beaedb 0%, #75619e 50%, #3f2a53 100%);
+    background-size: 200% auto;
+    transition: all 0.4s ease;
+}
+
+.btn-primary:hover {
+    background-position: right center;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(190, 174, 219, 0.4);
+}
+
+/* Delicate Section Tags */
+.section-tag {
+    background: linear-gradient(135deg, rgba(190, 174, 219, 0.15) 0%, rgba(117, 97, 158, 0.15) 100%);
+    color: var(--purple-primary);
+    padding: 8px 24px;
+    border-radius: 30px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    border: 1.5px solid rgba(190, 174, 219, 0.3);
+}
+
+/* Softer Card Icons */
+.card-icon {
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(190, 174, 219, 0.2) 0%, rgba(117, 97, 158, 0.3) 100%);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.card-icon i {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Elegant Testimonial Cards */
+.testimonial-card {
+    border-radius: 24px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.9) 0%, rgba(230, 239, 248, 0.9) 100%);
+    border: 1px solid rgba(190, 174, 219, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.testimonial-quote {
+    font-size: 4rem;
+    background: var(--gradient-soft);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    opacity: 0.6;
+}
+
+.testimonial-avatar {
+    background: var(--gradient-soft);
+    border: 3px solid white;
+    box-shadow: 0 4px 15px rgba(190, 174, 219, 0.3);
+}
+
+/* Softer Form Inputs */
+.form-group input,
+.form-group textarea {
+    border-radius: 16px;
+    border: 2px solid rgba(190, 174, 219, 0.3);
+    background: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--lavender-light);
+    background: white;
+}
+
+.form-group label {
+    color: var(--purple-primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+/* Delicate Contact Items */
+.contact-item {
+    border-radius: 20px;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(230, 239, 248, 0.8) 100%);
+    border: 1px solid rgba(190, 174, 219, 0.2);
+    backdrop-filter: blur(10px);
+}
+
+.contact-item-icon {
+    border-radius: 16px;
+    background: var(--gradient-soft);
+}
+
+/* Feminine Section Backgrounds */
+.section-alt {
+    background: linear-gradient(135deg, rgba(230, 239, 248, 0.5) 0%, rgba(255, 255, 255, 0.8) 100%);
+    position: relative;
+}
+
+.section-alt::before {
+    background-image:
+        radial-gradient(circle at 10% 20%, rgba(190, 174, 219, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 90% 80%, rgba(117, 97, 158, 0.08) 0%, transparent 50%),
+        radial-gradient(circle at 50% 50%, rgba(230, 239, 248, 0.1) 0%, transparent 50%);
+}
+
+/* Elegant About Section */
+.about-image img {
+    border-radius: 24px;
+    border: 4px solid white;
+    box-shadow: 0 15px 40px rgba(117, 97, 158, 0.2);
+}
+
+.about-image::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    right: 15px;
+    bottom: 15px;
+    background: var(--gradient-soft);
+    border-radius: 24px;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+/* Delicate Credentials */
+.credential-item {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.6) 0%, rgba(230, 239, 248, 0.6) 100%);
+    border-left: 3px solid var(--lavender-light);
+    border-radius: 0 12px 12px 0;
+    padding: 12px 20px;
+    margin-bottom: 12px;
+    backdrop-filter: blur(5px);
+}
+
+.credential-item::before {
+    content: '✓';
+    color: var(--lavender-light);
+    font-size: 1.2rem;
+}
+
+/* Softer Section Titles */
+.section-title {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: var(--gradient-soft);
+    border-radius: 3px;
+}
+
+/* Elegant Footer */
+.footer {
+    background: linear-gradient(135deg, #3a2d34 0%, #3f2a53 50%, #2d2438 100%);
+}
+
+.footer::before {
+    background: linear-gradient(90deg, transparent 0%, rgba(190, 174, 219, 0.4) 50%, transparent 100%);
+}
+
+/* Delicate Social Links */
+.social-link {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-link:hover {
+    background: var(--gradient-soft);
+    border-color: var(--lavender-light);
+}
+
+/* Feminine WhatsApp Button */
+.whatsapp-float {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.4);
+}
+
+.whatsapp-float:hover {
+    box-shadow: 0 12px 35px rgba(37, 211, 102, 0.6);
+}
+
+/* Delicate Back to Top */
+.back-to-top {
+    background: var(--gradient-soft);
+    border: 2px solid white;
+}
+
+.back-to-top:hover {
+    background: var(--gradient-primary);
+    box-shadow: 0 8px 25px rgba(190, 174, 219, 0.4);
+}
+
+/* Soft Cookie Banner */
+.cookie-banner {
+    background: linear-gradient(135deg, rgba(58, 45, 52, 0.98) 0%, rgba(63, 42, 83, 0.98) 100%);
+    backdrop-filter: blur(20px);
+    border-top: 2px solid rgba(190, 174, 219, 0.3);
+    border-radius: 20px 20px 0 0;
+}
+
+/* Elegant Blog Cards */
+.card h3 {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Feminine Hero Section */
+.hero {
+    background: linear-gradient(135deg, rgba(190, 174, 219, 0.92) 0%, rgba(117, 97, 158, 0.92) 50%, rgba(63, 42, 83, 0.92) 100%);
+}
+
+.hero::after {
+    background: radial-gradient(circle, rgba(230, 239, 248, 0.2) 0%, transparent 70%);
+}
+
+/* Delicate Hover Effects */
+.nav-link:hover {
+    color: var(--lavender-light);
+}
+
+/* Soft Shadows Throughout */
+.card,
+.testimonial-card,
+.contact-item,
+.btn {
+    box-shadow: 0 4px 20px rgba(117, 97, 158, 0.1);
+}
+
+.card:hover,
+.testimonial-card:hover {
+    box-shadow: 0 12px 35px rgba(117, 97, 158, 0.2);
+}
+
+/* Elegant Typography */
+h1,
+h2,
+h3,
+h4 {
+    letter-spacing: -0.5px;
+}
+
+p {
+    line-height: 1.8;
+    color: rgba(0, 0, 0, 0.75);
+}
+
+/* Feminine Accent Colors */
+::selection {
+    background: var(--lavender-light);
+    color: white;
+}
+
+/* Delicate Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(230, 239, 248, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gradient-soft);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gradient-primary);
+}
