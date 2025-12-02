@@ -1,0 +1,208 @@
+/* ============================================
+   DELICATE FOOTER & CURSIVE MENU
+   Ultra-refined footer styling and elegant cursive navigation
+   ============================================ */
+
+/* Import Elegant Cursive Font for Menu */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Parisienne&family=Great+Vibes&display=swap');
+
+/* ============================================
+   CURSIVE NAME STYLING
+   ============================================ */
+
+/* Logo name gets elegant cursive treatment */
+.logo span {
+    font-family: 'Great Vibes', cursive !important;
+    font-size: 1.8rem !important;
+    font-weight: 400 !important;
+}
+
+/* Navigation links stay professional with regular font */
+.nav-link {
+    font-family: var(--font-primary) !important;
+}
+
+/* ============================================
+   ULTRA-DELICATE FOOTER
+   ============================================ */
+
+/* Softer footer background with gentle gradient */
+.footer {
+    background: linear-gradient(135deg,
+            rgba(245, 240, 250, 0.98) 0%,
+            rgba(232, 224, 245, 0.98) 50%,
+            rgba(240, 235, 248, 0.98) 100%) !important;
+    color: rgba(63, 42, 83, 0.85) !important;
+    padding: 60px 0 30px !important;
+    border-top: 2px solid rgba(190, 174, 219, 0.25);
+    box-shadow: 0 -4px 20px rgba(117, 97, 158, 0.08);
+}
+
+/* Remove dark overlay */
+.footer::before {
+    display: none !important;
+}
+
+/* Footer brand styling - delicate colors */
+.footer-brand h3 {
+    color: var(--purple-primary) !important;
+    background: none !important;
+    -webkit-text-fill-color: var(--purple-primary) !important;
+    font-family: 'Great Vibes', cursive !important;
+    font-size: 2rem !important;
+    font-weight: 400 !important;
+    margin-bottom: 16px !important;
+}
+
+.footer-brand p {
+    color: rgba(63, 42, 83, 0.7) !important;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    max-width: 320px;
+}
+
+/* Footer section headings - cursive touch */
+.footer-section h4 {
+    color: var(--purple-primary) !important;
+    font-family: 'Dancing Script', cursive !important;
+    font-size: 1.3rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 20px !important;
+    letter-spacing: 0.5px;
+}
+
+/* Footer links - delicate styling */
+.footer-links a {
+    color: rgba(63, 42, 83, 0.75) !important;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    position: relative;
+    padding-left: 0;
+}
+
+.footer-links a:hover {
+    color: var(--purple-primary) !important;
+    padding-left: 8px;
+    transform: translateX(4px);
+}
+
+/* Add delicate arrow on hover */
+.footer-links a::before {
+    content: '→';
+    position: absolute;
+    left: -20px;
+    opacity: 0;
+    transition: all 0.3s ease;
+    color: var(--purple-soft);
+}
+
+.footer-links a:hover::before {
+    opacity: 1;
+    left: -12px;
+}
+
+/* Delicate social links */
+.social-link {
+    background: rgba(190, 174, 219, 0.15) !important;
+    border: 1.5px solid rgba(190, 174, 219, 0.3) !important;
+    color: var(--purple-primary) !important;
+    width: 42px;
+    height: 42px;
+    transition: all 0.3s ease;
+}
+
+.social-link:hover {
+    background: linear-gradient(135deg, #beaedb 0%, #9b8ab8 100%) !important;
+    border-color: transparent !important;
+    color: white !important;
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 6px 20px rgba(190, 174, 219, 0.35) !important;
+}
+
+.social-link i {
+    color: inherit !important;
+}
+
+/* Ultra-delicate footer bottom */
+.footer-bottom {
+    background: rgba(232, 224, 245, 0.3) !important;
+    border-top: 1px solid rgba(190, 174, 219, 0.25) !important;
+    margin: 40px calc(-1 * var(--space-md)) 0 !important;
+    padding: 24px var(--space-md) !important;
+}
+
+.footer-bottom p {
+    color: rgba(63, 42, 83, 0.7) !important;
+    font-size: 0.9rem !important;
+    font-weight: 400 !important;
+    letter-spacing: 0.3px;
+    text-shadow: none !important;
+}
+
+/* Responsive adjustments for cursive menu */
+@media (max-width: 768px) {
+    .nav-link {
+        font-size: 1.25rem !important;
+        text-align: center;
+    }
+
+    .logo span {
+        font-size: 1.6rem !important;
+    }
+
+    .footer-brand h3 {
+        font-size: 1.8rem !important;
+    }
+
+    .footer-section h4 {
+        font-size: 1.2rem !important;
+    }
+}
+
+/* Delicate footer content grid */
+.footer-content {
+    gap: 40px !important;
+}
+
+/* Add subtle pattern to footer */
+.footer::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(circle at 20% 30%, rgba(190, 174, 219, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 70%, rgba(232, 224, 245, 0.08) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+/* Ensure footer content is above pattern */
+.footer-content,
+.footer-bottom {
+    position: relative;
+    z-index: 1;
+}
+
+/* Delicate footer links list spacing */
+.footer-links {
+    gap: 12px !important;
+}
+
+.footer-links li {
+    transition: transform 0.3s ease;
+}
+
+.footer-links li:hover {
+    transform: translateX(4px);
+}
+
+/* Logo icon in footer - delicate sizing */
+.footer-brand h3 .logo-icon-img {
+    width: 32px !important;
+    height: 32px !important;
+    opacity: 0.9;
+    filter: drop-shadow(0 2px 4px rgba(117, 97, 158, 0.15));
+}
