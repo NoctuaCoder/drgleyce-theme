@@ -1,0 +1,324 @@
+/* ============================================
+   PREMIUM EFFECTS & ANIMATIONS
+   ============================================ */
+
+/* Logo Animation on Hover */
+.logo:hover .logo-icon-img {
+    transform: rotate(360deg) scale(1.1);
+    transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.logo-icon-img {
+    transition: transform 0.3s ease;
+}
+
+/* 3D Card Tilt Effect */
+.card {
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-12px) rotateX(5deg);
+    box-shadow: 0 20px 40px rgba(117, 97, 158, 0.3);
+}
+
+.card-icon {
+    transition: transform 0.3s ease;
+}
+
+.card:hover .card-icon {
+    transform: translateZ(20px) scale(1.1);
+}
+
+/* Testimonial Card 3D Effect */
+.testimonial-card {
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-8px) rotateX(3deg);
+    box-shadow: 0 15px 35px rgba(117, 97, 158, 0.25);
+}
+
+/* CTA Button Pulse Animation */
+@keyframes pulse-glow {
+
+    0%,
+    100% {
+        box-shadow: 0 0 0 0 rgba(117, 97, 158, 0.7);
+    }
+
+    50% {
+        box-shadow: 0 0 0 15px rgba(117, 97, 158, 0);
+    }
+}
+
+.btn-primary {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.3);
+    transform: translate(-50%, -50%);
+    transition: width 0.6s, height 0.6s;
+}
+
+.btn-primary:hover::before {
+    width: 300px;
+    height: 300px;
+}
+
+.hero .btn-primary {
+    animation: pulse-glow 2s infinite;
+}
+
+/* Floating Animation for Hero Elements */
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.hero-content h1 {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Background Pattern */
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        radial-gradient(circle at 20% 50%, rgba(117, 97, 158, 0.03) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(190, 174, 219, 0.03) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: 0;
+}
+
+.section>* {
+    position: relative;
+    z-index: 1;
+}
+
+/* Smooth Scroll Reveal Enhancement */
+[data-aos] {
+    transition-duration: 0.8s !important;
+}
+
+[data-aos="fade-up"] {
+    transform: translateY(50px) scale(0.95);
+    opacity: 0;
+}
+
+[data-aos="fade-up"].aos-animate {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+}
+
+/* Gradient Text Shine Effect */
+@keyframes shine {
+    0% {
+        background-position: -200% center;
+    }
+
+    100% {
+        background-position: 200% center;
+    }
+}
+
+.logo span {
+    background-size: 200% auto;
+    animation: shine 3s linear infinite;
+}
+
+/* Section Tag Glow */
+.section-tag {
+    position: relative;
+    display: inline-block;
+}
+
+.section-tag::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--gradient-primary);
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(117, 97, 158, 0.5);
+}
+
+/* WhatsApp Float Enhanced Animation */
+@keyframes float-bounce {
+
+    0%,
+    100% {
+        transform: translateY(0) scale(1);
+    }
+
+    50% {
+        transform: translateY(-10px) scale(1.05);
+    }
+}
+
+.whatsapp-float {
+    animation: float-bounce 3s ease-in-out infinite;
+}
+
+.whatsapp-float:hover {
+    animation: none;
+    transform: scale(1.15) rotate(5deg);
+}
+
+/* Form Input Focus Effect */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--purple-primary);
+    box-shadow: 0 0 0 3px rgba(117, 97, 158, 0.1), 0 0 20px rgba(117, 97, 158, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Footer Link Hover Effect */
+.footer-links a {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.footer-links a::before {
+    content: '→';
+    position: absolute;
+    left: -20px;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover::before {
+    left: -15px;
+    opacity: 1;
+}
+
+.footer-links a:hover {
+    transform: translateX(5px);
+    color: var(--lavender-light);
+}
+
+/* Social Links Bounce */
+.social-link {
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.social-link:hover {
+    transform: translateY(-5px) rotate(360deg);
+    background: var(--gradient-primary);
+}
+
+/* Credential Items Slide In */
+.credential-item {
+    transition: all 0.3s ease;
+    position: relative;
+    padding-left: 25px;
+}
+
+.credential-item::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--purple-primary);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.credential-item:hover {
+    transform: translateX(5px);
+    color: var(--purple-primary);
+}
+
+.credential-item:hover::before {
+    transform: scale(1.3);
+}
+
+/* Hero Parallax Effect */
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(117, 97, 158, 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    animation: float 8s ease-in-out infinite;
+}
+
+/* Testimonial Quote Animation */
+.testimonial-quote {
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover .testimonial-quote {
+    transform: scale(1.2) rotate(-5deg);
+    color: var(--purple-primary);
+}
+
+/* Blog Card Image Zoom */
+.card:hover {
+    overflow: hidden;
+}
+
+/* Back to Top Enhanced */
+.back-to-top {
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.back-to-top:hover {
+    transform: translateY(-5px) rotate(360deg);
+}
+
+/* Loading Animation for Images */
+img {
+    transition: opacity 0.3s ease;
+}
+
+img:not([src]) {
+    opacity: 0;
+}
+
+/* Smooth Color Transitions */
+* {
+    transition-property: background-color, border-color, color, fill, stroke;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+}
+
+/* Disable transitions for specific elements */
+.logo-icon-img,
+.whatsapp-float,
+.back-to-top,
+.menu-toggle span {
+    transition-property: transform, opacity, box-shadow;
+}
