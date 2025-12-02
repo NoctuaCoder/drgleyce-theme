@@ -52,16 +52,11 @@ if (menuToggle && navMenu) {
 }
 
 // ============================================
-// HEADER SCROLL EFFECT
+// HEADER SCROLL EFFECT & ACTIVE LINKS
 // ============================================
-const header = document.getElementById('header');
-let lastScroll = 0;
-
-window.addEventListener('scroll', function () {
-    const currentScroll = window.pageYOffset;
-
-    // Add shadow when scrolled
-    if (currentScroll > 50) {
+window.addEventListener('scroll', () => {
+    const header = document.getElementById('header');
+    if (window.scrollY > 50) {
         header.classList.add('scrolled');
     } else {
         header.classList.remove('scrolled');
