@@ -258,56 +258,98 @@ p {
     margin-bottom: 20px;
 }
 
-/* Modern Credentials Grid */
-.credentials {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 16px;
-    margin-top: 32px;
+/* Modern Credentials Timeline */
+.credentials-timeline {
+    margin-top: 40px;
+    position: relative;
+    padding-left: 20px;
 }
 
-/* Soft Credentials - Modern Card Style */
-.credential-item {
-    background: white;
-    border: 1px solid rgba(190, 174, 219, 0.3);
-    border-radius: 16px;
-    padding: 16px 20px;
-    font-size: 0.95rem;
-    color: rgba(63, 42, 83, 0.9) !important;
+.credentials-timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: linear-gradient(to bottom, var(--lavender-light), rgba(190, 174, 219, 0.1));
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 24px;
+    padding-left: 40px;
     display: flex;
     align-items: center;
-    gap: 12px;
-    box-shadow: 0 4px 15px rgba(117, 97, 158, 0.05) !important;
-    transition: all 0.3s ease;
 }
 
-.credential-item:hover {
-    transform: translateY(-3px);
-    border-color: var(--lavender-light);
-    box-shadow: 0 8px 25px rgba(117, 97, 158, 0.12) !important;
-}
-
-.credential-item::before {
-    content: '\f058';
-    /* FontAwesome Check Circle */
-    font-family: 'Font Awesome 6 Free';
-    font-weight: 900;
-    color: var(--purple-primary) !important;
-    font-size: 1.2rem;
-    background: rgba(232, 224, 245, 0.5);
-    min-width: 32px;
-    height: 32px;
+.timeline-icon {
+    position: absolute;
+    left: 0;
+    width: 40px;
+    height: 40px;
+    background: white;
+    border: 2px solid var(--lavender-light);
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
+    color: var(--purple-primary);
+    font-size: 1rem;
+    z-index: 2;
+    box-shadow: 0 4px 10px rgba(117, 97, 158, 0.1);
+    transition: all 0.3s ease;
 }
 
-/* Highlight CREFITO */
-.credential-item:last-child {
-    background: linear-gradient(135deg, #f5f0fa 0%, #ffffff 100%);
-    border-color: var(--purple-primary);
+.timeline-item:hover .timeline-icon {
+    background: var(--purple-primary);
+    color: white;
+    transform: scale(1.1);
+}
+
+.timeline-content {
+    background: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(190, 174, 219, 0.2);
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .timeline-content {
+    box-shadow: 0 4px 15px rgba(117, 97, 158, 0.08);
+    transform: translateX(5px);
+    border-color: var(--lavender-light);
+}
+
+.timeline-content h4 {
+    color: var(--purple-primary);
+    font-size: 0.95rem;
+    margin-bottom: 4px;
     font-weight: 600;
+}
+
+.timeline-content p {
+    color: rgba(63, 42, 83, 0.7);
+    font-size: 0.9rem;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Highlight CREFITO Item */
+.timeline-item.highlight .timeline-icon {
+    background: var(--purple-primary);
+    color: white;
+    border-color: var(--purple-primary);
+}
+
+.timeline-item.highlight .timeline-content {
+    background: linear-gradient(135deg, #f5f0fa 0%, #ffffff 100%);
+    border: 1px solid var(--purple-primary);
+}
+
+.timeline-item.highlight h4 {
+    color: var(--purple-primary);
 }
 
 /* Delicate Footer */
