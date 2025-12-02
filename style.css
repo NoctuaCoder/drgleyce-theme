@@ -347,6 +347,18 @@ a:hover {
     color: var(--purple-primary);
 }
 
+.logo-icon-img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.footer-brand h3 .logo-icon-img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
 .logo-icon {
     font-size: var(--font-size-3xl);
 }
