@@ -54,6 +54,13 @@
     margin-bottom: 16px;
 }
 
+.footer-brand p {
+    color: rgba(63, 42, 83, 0.7) !important;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    max-width: 320px;
+}
+
 /* Brighten Footer Copyright */
 .footer-bottom p {
     color: rgba(255, 255, 255, 0.95) !important;
