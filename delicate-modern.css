@@ -1,0 +1,382 @@
+/* ============================================
+   DELICATE & MODERN REFINEMENTS
+   ============================================ */
+
+/* Softer, More Delicate Color Palette */
+:root {
+    --lavender-ultra-light: #e8e0f5;
+    --purple-soft: #9b8ab8;
+    --white-warm: #fafafa;
+}
+
+/* Ultra-Soft Backgrounds */
+body {
+    background: linear-gradient(135deg, #fafafa 0%, #f5f0fa 100%);
+}
+
+.section {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
+}
+
+.section-alt {
+    background: linear-gradient(135deg, rgba(248, 245, 252, 0.8) 0%, rgba(255, 255, 255, 0.6) 100%);
+}
+
+/* Delicate Cards - More Minimal */
+.card {
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(190, 174, 219, 0.15);
+    box-shadow: 0 2px 15px rgba(117, 97, 158, 0.08);
+    padding: 32px 24px;
+}
+
+.card:hover {
+    background: rgba(255, 255, 255, 0.95);
+    border-color: rgba(190, 174, 219, 0.25);
+    box-shadow: 0 8px 30px rgba(117, 97, 158, 0.12);
+    transform: translateY(-6px);
+}
+
+/* Softer Card Icons */
+.card-icon {
+    width: 56px;
+    height: 56px;
+    background: linear-gradient(135deg, rgba(232, 224, 245, 0.6) 0%, rgba(190, 174, 219, 0.4) 100%);
+    border: 2px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 15px rgba(117, 97, 158, 0.1);
+}
+
+.card-icon i {
+    font-size: 24px;
+    color: var(--purple-soft);
+}
+
+/* Delicate Typography */
+h1 {
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: var(--purple-primary);
+}
+
+h2 {
+    font-weight: 600;
+    letter-spacing: -0.5px;
+    color: var(--purple-primary);
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: var(--purple-soft);
+}
+
+p {
+    color: rgba(0, 0, 0, 0.7);
+    line-height: 1.9;
+    font-weight: 400;
+}
+
+/* Softer Section Tags */
+.section-tag {
+    background: rgba(232, 224, 245, 0.5);
+    color: var(--purple-soft);
+    border: 1px solid rgba(190, 174, 219, 0.25);
+    padding: 6px 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/* Delicate Buttons */
+.btn-primary {
+    background: linear-gradient(135deg, #beaedb 0%, #9b8ab8 100%);
+    border: none;
+    box-shadow: 0 4px 15px rgba(190, 174, 219, 0.3);
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #9b8ab8 0%, #75619e 100%);
+    box-shadow: 0 6px 25px rgba(190, 174, 219, 0.4);
+}
+
+.btn-outline {
+    background: rgba(255, 255, 255, 0.9);
+    border: 2px solid rgba(190, 174, 219, 0.3);
+    color: var(--purple-soft);
+}
+
+.btn-outline:hover {
+    background: rgba(232, 224, 245, 0.5);
+    border-color: var(--lavender-light);
+    color: var(--purple-primary);
+}
+
+/* Minimal Header */
+.header {
+    background: rgba(255, 255, 255, 0.92);
+    backdrop-filter: blur(15px);
+    box-shadow: 0 1px 10px rgba(117, 97, 158, 0.08);
+    border-bottom: 1px solid rgba(190, 174, 219, 0.1);
+}
+
+.header.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 15px rgba(117, 97, 158, 0.12);
+}
+
+/* Delicate Logo */
+.logo span {
+    background: linear-gradient(135deg, #9b8ab8 0%, #75619e 100%);
+    font-weight: 700;
+}
+
+/* Softer Nav Links */
+.nav-link {
+    color: rgba(0, 0, 0, 0.7);
+    font-weight: 500;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--purple-soft);
+}
+
+.nav-link::after {
+    background: linear-gradient(90deg, transparent, var(--lavender-light), transparent);
+    height: 1.5px;
+}
+
+/* Delicate Hero */
+.hero {
+    background: linear-gradient(135deg, rgba(232, 224, 245, 0.85) 0%, rgba(190, 174, 219, 0.85) 50%, rgba(155, 138, 184, 0.85) 100%);
+    min-height: 85vh;
+}
+
+.hero h1 {
+    color: white;
+    font-weight: 700;
+    text-shadow: 0 2px 20px rgba(63, 42, 83, 0.2);
+}
+
+.hero p {
+    color: rgba(255, 255, 255, 0.95);
+    font-weight: 400;
+}
+
+/* Soft Testimonials */
+.testimonial-card {
+    background: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(190, 174, 219, 0.15);
+    box-shadow: 0 4px 20px rgba(117, 97, 158, 0.08);
+}
+
+.testimonial-quote {
+    color: var(--lavender-light);
+    opacity: 0.5;
+    font-size: 3rem;
+}
+
+.testimonial-avatar {
+    background: linear-gradient(135deg, #e8e0f5 0%, #beaedb 100%);
+    color: var(--purple-soft);
+    font-weight: 600;
+}
+
+/* Delicate Contact Section */
+.contact-item {
+    background: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(190, 174, 219, 0.15);
+    box-shadow: 0 2px 15px rgba(117, 97, 158, 0.06);
+}
+
+.contact-item-icon {
+    background: linear-gradient(135deg, #e8e0f5 0%, #beaedb 100%);
+    border: 2px solid white;
+}
+
+.contact-item-icon i {
+    color: var(--purple-soft);
+}
+
+/* Soft Form Inputs */
+.form-group input,
+.form-group textarea {
+    background: rgba(255, 255, 255, 0.95);
+    border: 1.5px solid rgba(190, 174, 219, 0.25);
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--lavender-light);
+    box-shadow: 0 0 0 3px rgba(190, 174, 219, 0.1);
+    background: white;
+}
+
+.form-group label {
+    color: var(--purple-soft);
+    font-weight: 500;
+}
+
+/* Delicate About Image */
+.about-image img {
+    border-radius: 20px;
+    border: 3px solid white;
+    box-shadow: 0 10px 35px rgba(117, 97, 158, 0.15);
+}
+
+.about-image::before {
+    background: linear-gradient(135deg, rgba(232, 224, 245, 0.4) 0%, rgba(190, 174, 219, 0.4) 100%);
+    border-radius: 20px;
+}
+
+/* Soft Credentials */
+.credential-item {
+    background: rgba(248, 245, 252, 0.6);
+    border-left: 2px solid var(--lavender-light);
+    padding: 10px 18px;
+    font-size: 0.95rem;
+}
+
+.credential-item::before {
+    color: var(--lavender-light);
+    font-size: 1rem;
+}
+
+/* Delicate Footer */
+.footer {
+    background: linear-gradient(135deg, #3a2d34 0%, #3f2a53 50%, #2d2438 100%);
+}
+
+.footer-brand h3 {
+    background: linear-gradient(135deg, #e8e0f5 0%, #ffffff 100%);
+}
+
+.footer-brand p,
+.footer-links a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-links a:hover {
+    color: var(--lavender-light);
+}
+
+/* Soft Social Links */
+.social-link {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.social-link:hover {
+    background: linear-gradient(135deg, #beaedb 0%, #9b8ab8 100%);
+    border-color: transparent;
+}
+
+/* Delicate WhatsApp Button */
+.whatsapp-float {
+    background: linear-gradient(135deg, #25D366 0%, #1ea952 100%);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.35);
+}
+
+/* Soft Back to Top */
+.back-to-top {
+    background: linear-gradient(135deg, #e8e0f5 0%, #beaedb 100%);
+    border: 2px solid white;
+    box-shadow: 0 4px 15px rgba(117, 97, 158, 0.2);
+}
+
+.back-to-top i {
+    color: var(--purple-soft);
+}
+
+/* Minimal Cookie Banner */
+.cookie-banner {
+    background: rgba(58, 45, 52, 0.96);
+    backdrop-filter: blur(25px);
+    border-top: 1px solid rgba(190, 174, 219, 0.2);
+}
+
+/* Delicate Section Dividers */
+.section-title::after {
+    background: linear-gradient(90deg, transparent, var(--lavender-light), transparent);
+    height: 2px;
+    width: 80px;
+}
+
+/* Soft Animations - Less Dramatic */
+.card:hover {
+    transform: translateY(-4px) rotateX(2deg);
+}
+
+.testimonial-card:hover {
+    transform: translateY(-4px);
+}
+
+/* Delicate Shadows Throughout */
+* {
+    box-shadow: none !important;
+}
+
+.card,
+.testimonial-card,
+.contact-item,
+.btn {
+    box-shadow: 0 2px 15px rgba(117, 97, 158, 0.08) !important;
+}
+
+.card:hover,
+.testimonial-card:hover {
+    box-shadow: 0 8px 30px rgba(117, 97, 158, 0.12) !important;
+}
+
+.btn-primary {
+    box-shadow: 0 4px 15px rgba(190, 174, 219, 0.3) !important;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 6px 25px rgba(190, 174, 219, 0.4) !important;
+}
+
+/* Ultra-Soft Scrollbar */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #e8e0f5 0%, #beaedb 100%);
+}
+
+/* Delicate Selection */
+::selection {
+    background: rgba(232, 224, 245, 0.6);
+    color: var(--purple-primary);
+}
+
+/* Remove Excessive Animations */
+.logo:hover .logo-icon-img {
+    transform: scale(1.05);
+    transition: transform 0.4s ease;
+}
+
+.hero-content h1 {
+    animation: none;
+}
+
+.whatsapp-float {
+    animation: none;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.08);
+}
+
+.back-to-top:hover {
+    transform: translateY(-3px);
+}
+
+/* Softer Spacing */
+.section {
+    padding: 80px 0;
+}
+
+.card {
+    margin-bottom: 24px;
+}
