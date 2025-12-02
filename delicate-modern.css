@@ -109,13 +109,13 @@ p {
 .btn-outline {
     background: rgba(255, 255, 255, 0.9);
     border: 2px solid rgba(190, 174, 219, 0.3);
-    color: var(--purple-soft);
+    color: var(--purple-primary) !important;
 }
 
 .btn-outline:hover {
     background: rgba(232, 224, 245, 0.5);
     border-color: var(--lavender-light);
-    color: var(--purple-primary);
+    color: var(--purple-primary) !important;
 }
 
 /* Minimal Header */
@@ -131,20 +131,12 @@ p {
     box-shadow: 0 2px 15px rgba(117, 97, 158, 0.12);
 }
 
-/* Delicate Logo */
+/* Delicate Logo - Solid Color for Visibility */
 .logo span {
-    background: linear-gradient(135deg, #9b8ab8 0%, #75619e 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
+    color: var(--purple-primary) !important;
+    background: none !important;
+    -webkit-text-fill-color: var(--purple-primary) !important;
     font-weight: 700;
-}
-
-/* Fallback for better visibility */
-@supports not (background-clip: text) {
-    .logo span {
-        color: var(--purple-primary);
-    }
 }
 
 /* Softer Nav Links */
