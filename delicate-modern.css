@@ -239,17 +239,19 @@ p {
     border-radius: 20px;
 }
 
-/* Soft Credentials */
+/* Soft Credentials - More Visible */
 .credential-item {
-    background: rgba(248, 245, 252, 0.6);
-    border-left: 2px solid var(--lavender-light);
-    padding: 10px 18px;
+    background: rgba(248, 245, 252, 0.8);
+    border-left: 3px solid var(--purple-primary);
+    padding: 12px 18px;
     font-size: 0.95rem;
+    color: rgba(0, 0, 0, 0.85) !important;
 }
 
 .credential-item::before {
-    color: var(--lavender-light);
-    font-size: 1rem;
+    color: var(--purple-primary) !important;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 /* Delicate Footer */
