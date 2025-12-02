@@ -115,12 +115,12 @@ p {
 }
 
 .btn-outline:hover {
-    background: linear-gradient(135deg, #9b8ab8 0%, #75619e 100%);
-    color: white !important;
-    -webkit-text-fill-color: white !important;
+    background: linear-gradient(135deg, #9b8ab8 0%, #75619e 100%) !important;
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
     /* Force white text */
     box-shadow: 0 6px 25px rgba(190, 174, 219, 0.4) !important;
-    border-color: transparent;
+    border-color: transparent !important;
 }
 
 /* Brighten Footer Copyright */
