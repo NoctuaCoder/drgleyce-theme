@@ -1,67 +1,66 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
-  <!-- Lotus Petals (Back Layer) -->
-  <g id="lotus-back">
-    <!-- Bottom Left Petal -->
-    <path d="M 60 140 Q 40 120 45 90 Q 48 75 60 70 L 70 100 Q 65 120 60 140 Z" 
-          fill="#d4b5d4" stroke="#5e3a7d" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Lotus Flower - Simple and Elegant -->
+  
+  <!-- Back Layer Petals (Darker Purple) -->
+  <g id="back-petals">
+    <!-- Bottom Left -->
+    <path d="M 100 150 Q 60 145 40 120 Q 35 110 40 100 Q 50 95 65 100 L 85 125 Q 95 140 100 150 Z" 
+          fill="#b89dc9" stroke="#5e3a7d" stroke-width="2.5" stroke-linejoin="round"/>
     
-    <!-- Bottom Right Petal -->
-    <path d="M 140 140 Q 160 120 155 90 Q 152 75 140 70 L 130 100 Q 135 120 140 140 Z" 
-          fill="#d4b5d4" stroke="#5e3a7d" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Bottom Right -->
+    <path d="M 100 150 Q 140 145 160 120 Q 165 110 160 100 Q 150 95 135 100 L 115 125 Q 105 140 100 150 Z" 
+          fill="#b89dc9" stroke="#5e3a7d" stroke-width="2.5" stroke-linejoin="round"/>
     
-    <!-- Left Petal -->
-    <path d="M 50 100 Q 30 85 30 60 Q 32 45 45 40 L 70 70 Q 60 85 50 100 Z" 
-          fill="#c9a8d4" stroke="#5e3a7d" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Left -->
+    <path d="M 70 110 Q 40 100 25 75 Q 20 65 25 55 Q 35 50 50 55 L 75 85 Q 75 100 70 110 Z" 
+          fill="#c9a8d4" stroke="#5e3a7d" stroke-width="2.5" stroke-linejoin="round"/>
     
-    <!-- Right Petal -->
-    <path d="M 150 100 Q 170 85 170 60 Q 168 45 155 40 L 130 70 Q 140 85 150 100 Z" 
-          fill="#c9a8d4" stroke="#5e3a7d" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Right -->
+    <path d="M 130 110 Q 160 100 175 75 Q 180 65 175 55 Q 165 50 150 55 L 125 85 Q 125 100 130 110 Z" 
+          fill="#c9a8d4" stroke="#5e3a7d" stroke-width="2.5" stroke-linejoin="round"/>
   </g>
 
-  <!-- Lotus Petals (Front Layer) -->
-  <g id="lotus-front">
-    <!-- Top Left Petal -->
-    <path d="M 70 80 Q 50 50 60 20 Q 70 5 85 10 L 90 50 Q 80 70 70 80 Z" 
-          fill="#d4b5d4" stroke="#5e3a7d" stroke-width="3" stroke-linejoin="round"/>
+  <!-- Middle Layer Petals (Medium Purple) -->
+  <g id="middle-petals">
+    <!-- Top Left -->
+    <path d="M 85 95 Q 65 75 55 45 Q 52 30 60 20 Q 70 15 80 25 L 95 60 Q 92 80 85 95 Z" 
+          fill="#d4b5d4" stroke="#5e3a7d" stroke-width="2.5" stroke-linejoin="round"/>
     
-    <!-- Top Center Petal -->
-    <path d="M 100 70 Q 95 35 100 10 Q 100 0 100 0 Q 100 0 100 10 Q 105 35 100 70 Z" 
-          fill="#c9a8d4" stroke="#5e3a7d" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Top Right -->
+    <path d="M 115 95 Q 135 75 145 45 Q 148 30 140 20 Q 130 15 120 25 L 105 60 Q 108 80 115 95 Z" 
+          fill="#d4b5d4" stroke="#5e3a7d" stroke-width="2.5" stroke-linejoin="round"/>
     
-    <!-- Top Right Petal -->
-    <path d="M 130 80 Q 150 50 140 20 Q 130 5 115 10 L 110 50 Q 120 70 130 80 Z" 
-          fill="#d4b5d4" stroke="#5e3a7d" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Center Left -->
+    <path d="M 80 105 Q 60 95 50 70 Q 48 60 52 52 Q 60 48 70 55 L 88 85 Q 85 98 80 105 Z" 
+          fill="#d4b5d4" stroke="#5e3a7d" stroke-width="2.5" stroke-linejoin="round"/>
     
-    <!-- Center Left Petal -->
-    <path d="M 75 100 Q 60 80 65 55 Q 70 45 80 48 L 88 75 Q 82 90 75 100 Z" 
-          fill="#c9a8d4" stroke="#5e3a7d" stroke-width="3" stroke-linejoin="round"/>
-    
-    <!-- Center Right Petal -->
-    <path d="M 125 100 Q 140 80 135 55 Q 130 45 120 48 L 112 75 Q 118 90 125 100 Z" 
-          fill="#c9a8d4" stroke="#5e3a7d" stroke-width="3" stroke-linejoin="round"/>
+    <!-- Center Right -->
+    <path d="M 120 105 Q 140 95 150 70 Q 152 60 148 52 Q 140 48 130 55 L 112 85 Q 115 98 120 105 Z" 
+          fill="#d4b5d4" stroke="#5e3a7d" stroke-width="2.5" stroke-linejoin="round"/>
   </g>
 
-  <!-- Medical Caduceus Symbol -->
-  <g id="caduceus">
-    <!-- Staff -->
-    <line x1="100" y1="40" x2="100" y2="120" 
-          stroke="#8b6ba8" stroke-width="4" stroke-linecap="round"/>
+  <!-- Front Layer Petals (Light Purple) -->
+  <g id="front-petals">
+    <!-- Top Center -->
+    <path d="M 100 85 Q 95 50 95 25 Q 95 10 100 5 Q 105 10 105 25 Q 105 50 100 85 Z" 
+          fill="#e8d5e8" stroke="#5e3a7d" stroke-width="2.5" stroke-linejoin="round"/>
     
-    <!-- Top Circle -->
-    <circle cx="100" cy="35" r="6" fill="#5e3a7d"/>
+    <!-- Upper Left -->
+    <path d="M 90 90 Q 75 65 70 35 Q 68 20 75 12 Q 83 10 90 20 L 98 55 Q 96 75 90 90 Z" 
+          fill="#e8d5e8" stroke="#5e3a7d" stroke-width="2.5" stroke-linejoin="round"/>
     
-    <!-- Left Snake -->
-    <path d="M 95 50 Q 85 60 90 70 Q 95 80 90 90 Q 85 100 90 110" 
-          fill="none" stroke="#8b6ba8" stroke-width="3.5" stroke-linecap="round"/>
-    
-    <!-- Right Snake -->
-    <path d="M 105 50 Q 115 60 110 70 Q 105 80 110 90 Q 115 100 110 110" 
-          fill="none" stroke="#8b6ba8" stroke-width="3.5" stroke-linecap="round"/>
-    
-    <!-- Snake Heads (Left) -->
-    <circle cx="90" cy="48" r="3" fill="#5e3a7d"/>
-    
-    <!-- Snake Heads (Right) -->
-    <circle cx="110" cy="48" r="3" fill="#5e3a7d"/>
+    <!-- Upper Right -->
+    <path d="M 110 90 Q 125 65 130 35 Q 132 20 125 12 Q 117 10 110 20 L 102 55 Q 104 75 110 90 Z" 
+          fill="#e8d5e8" stroke="#5e3a7d" stroke-width="2.5" stroke-linejoin="round"/>
   </g>
+
+  <!-- Center Circle (Flower Center) -->
+  <circle cx="100" cy="100" r="12" fill="#f5e6f5" stroke="#5e3a7d" stroke-width="2"/>
+  
+  <!-- Small dots in center for detail -->
+  <circle cx="95" cy="95" r="2" fill="#b89dc9"/>
+  <circle cx="105" cy="95" r="2" fill="#b89dc9"/>
+  <circle cx="100" cy="103" r="2" fill="#b89dc9"/>
+  <circle cx="95" cy="103" r="1.5" fill="#c9a8d4"/>
+  <circle cx="105" cy="103" r="1.5" fill="#c9a8d4"/>
 </svg>
